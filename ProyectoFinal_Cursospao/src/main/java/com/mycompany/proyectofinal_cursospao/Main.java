@@ -110,19 +110,19 @@ public class Main {
             System.out.println("\n Prueba completada correctamente.");
             
             // ...
-System.out.println("\n✅ Prueba completada correctamente.");
+            System.out.println("\n✅ Prueba completada correctamente.");
 
-// === Persistencia: guardar y leer archivo ===
-GestorArchivos.guardarNotas(estudiantes, curso);
-GestorArchivos.leerNotas(curso.getCodigo());
+            // === Persistencia: guardar y leer archivo ===
+            GestorArchivos.guardarNotas(estudiantes, curso);
+            GestorArchivos.leerNotas(curso.getCodigo());
 
-System.out.println("\n=== ACCESO A RECURSOS DIGITALES ===");
-for (Estudiante e : estudiantes) {
-    System.out.println("\n¿El estudiante " + e.getNombre() + " pagó por la TarjetaSpark? (true/false): ");
-    boolean pago = sc.nextBoolean();
-    TarjetaSpark tarjeta = new TarjetaSpark(curso.getTitulo(), pago);
-    tarjeta.mostrarRecursos(tarjeta.isActiva());
-}
+            System.out.println("\n=== ACCESO A RECURSOS DIGITALES ===");
+            for (Estudiante e : estudiantes) {
+                System.out.println("\n¿El estudiante " + e.getNombre() + " pagó por la TarjetaSpark? (true/false): ");
+                boolean pago = sc.nextBoolean();
+                TarjetaSpark tarjeta = new TarjetaSpark(curso.getTitulo(), pago);
+                tarjeta.mostrarRecursos(tarjeta.isActiva());
+            }
         }
       
     }

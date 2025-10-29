@@ -8,10 +8,15 @@ package com.mycompany.proyectofinal_cursospao;
 import java.util.ArrayList;
 
 public class TarjetaSpark implements AccesoRecursos {
+    
+    // Atributos
     private final boolean activa; // true si el estudiante pagó
+
     private final String tipoCurso;
 
     public TarjetaSpark(String tipoCurso, boolean activa) {
+       
+       // Inicializa los atributos de la tarjeta
         this.tipoCurso = tipoCurso;
         this.activa = activa;
     }
