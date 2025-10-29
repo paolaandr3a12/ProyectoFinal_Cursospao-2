@@ -2,10 +2,11 @@ package com.mycompany.proyectofinal_cursospao;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//Main paola
 public class Main {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("=== SISTEMA DE CURSOS  ===");
+            System.out.println("=== SISTEMA DE CURSOS PAARC  ===");
             System.out.print("Ingrese nombre del instructor: ");
             String nombreInstructor = sc.nextLine();
             System.out.print("Ingrese ID del instructor: ");

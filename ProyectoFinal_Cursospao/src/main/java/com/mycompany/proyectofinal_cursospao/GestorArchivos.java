@@ -15,9 +15,9 @@ public class GestorArchivos {
                 double notaFinal = curso.calcularNotaFinal(e);
                 bw.write(e.getNombre() + " (" + e.getId() + ") → Nota Final: " + notaFinal + "\n");
             }
-            System.out.println("📁 Archivo de notas guardado exitosamente en: " + archivo.getAbsolutePath());
+            System.out.println(" Archivo de notas guardado exitosamente en: " + archivo.getAbsolutePath());
         } catch (IOException ex) {
-            System.out.println("⚠️ Error al guardar el archivo: " + ex.getMessage());
+            System.out.println(" Error al guardar el archivo: " + ex.getMessage());
         }
     }
 

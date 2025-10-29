@@ -8,7 +8,7 @@ public class Instructor extends Persona {
         super(id, nombre, correo);
         this.especialidad = especialidad;
     }
-
+//pao
     public String getEspecialidad() { return especialidad; }
     public void setEspecialidad(String especialidad) { this.especialidad = especialidad; }
 
